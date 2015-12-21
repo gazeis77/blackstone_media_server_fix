@@ -1,9 +1,10 @@
 (function() {
-  var app = angular.module('gemStore', ['store-directives']);
+
+  var app = angular.module('gemStore', ['storeDirectives', 'ngRoute']);
 
   app.controller('StoreController', ['$http', function($http){
     var store = this;
-    $http.get('/store-products.json').success(function(data){
+    $http.get('../blackstone_media/store-products.json').success(function(data){
       store.products = data;
     });
   } ]);

@@ -1,5 +1,7 @@
 (function() {
-  angular.module('store-directives', []);
+
+
+  var app = angular.module('storeDirectives', []);
 
   app.directive("productDescriptions", function() {
     return {
@@ -54,7 +56,7 @@
       controllerAs: "gallery"
     };
   });
-});
+})();
 
 
 
