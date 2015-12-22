@@ -1,7 +1,7 @@
 [
   {
-    "name": "Honespiders",
-    "description": "Some gems have hidden qualities beyond their luster, beyond their shine... Azurite is one of those gems.",
+    "name": "Honeyspiders",
+    "description": "Rock band from Cincinnati OH, with blistering guitars and booming drums check out their album on bandcamp.",
     "shine": 8,
     "rarity": 7,
     "color": "#CCC",
@@ -14,8 +14,8 @@
     "reviews": []
   },
   {
-    "name": "Bloodstone",
-    "description": "Origin of the Bloodstone is unknown, hence its low value. It has a very high shine and 12 sides, however.",
+    "name": "The Districts",
+    "description": "Fresh faced kids from Pennsylvania just out or Highschool and ready to revieve the storytellers side of music",
     "shine": 9,
     
     "rarity": 6,
@@ -27,8 +27,8 @@
     "reviews": []
   },
   {
-    "name": "Zircon",
-    "description": "Zircon is our most coveted and sought after gem. You will pay much to be the proud owner of this gorgeous and high shine gem.",
+    "name": "Benjamin Booker",
+    "description": "Rock n' Soul music from New Orleans music this artist earned his chops playing live",
     "shine": 70,
     
     "rarity": 2,
