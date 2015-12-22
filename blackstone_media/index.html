@@ -2,6 +2,9 @@
 <html ng-app="gemStore">
   <head>
     <link rel="stylesheet" type="text/css" href="css/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/application.css" />
+    <link rel="stylesheet/less" type="text/css" href="css/style.less" />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.5.3/less.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
     <script src="//code.angularjs.org/1.4.5/angular-route.js"></script>
     <script type="text/javascript" src="js/product.js"></script>
@@ -9,13 +12,13 @@
 
   </head>
 
-  <body ng-controller="StoreController as store">
+  <body ng-controller="StoreController as store" >
     <!--  Store Header  -->
+<div class="container">
     <header>
-      <h1 class="text-center">Flatlander Crafted Gems</h1>
-      <h2 class="text-center">– an Angular store –</h2>
+      <h1 class="text-center">Hotfire Jamz</h1>
+      <h2 class="text-center">&mdash; Up and Coming Acts &mdash;</h2>
     </header>
-
     <!--  Products Container  -->
     <div class="list-group">
       <!--  Product Container  -->
@@ -30,5 +33,6 @@
 
       </div>
     </div>
+</div>
   </body>
 </html>
