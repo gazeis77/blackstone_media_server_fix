@@ -7,7 +7,7 @@
     "color": "#CCC",
     "faces": 14,
     "images": [
-      "img/honeyspiders_1.jpg",
+      "../blackstone_media/img/honeyspiders_1.jpg",
       "img/honeyspiders_2.jpg",
       "img/honeyspiders_3.jpg"
     ],

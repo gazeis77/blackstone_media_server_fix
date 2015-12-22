@@ -4,7 +4,24 @@
     <link rel="stylesheet" type="text/css" href="css/bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="css/application.css" />
     <link rel="stylesheet/less" type="text/css" href="css/style.less" />
-    <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.5.3/less.min.js"></script>
+    <script>
+  less = {
+    env: "development",
+    logLevel: 2,
+    async: true,
+    fileAsync: false,
+    poll: 1000,
+    functions: {},
+    dumpLineNumbers: "comments",
+    relativeUrls: false,
+    globalVars: {
+      var1: '"string value"',
+      var2: 'regular value'
+    },
+    rootpath: ":/a.com/"
+  };
+</script>
+    <script src="less/dist/less.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
     <script src="//code.angularjs.org/1.4.5/angular-route.js"></script>
     <script type="text/javascript" src="js/product.js"></script>
@@ -15,8 +32,8 @@
   <body ng-controller="StoreController as store" >
     <!--  Store Header  -->
 <div class="container">
-    <header>
-      <h1 class="text-center">Hotfire Jamz</h1>
+    <header class="dropshadow">
+      <h1 class="text-center text3d">Hotfire Jamz</h1>
       <h2 class="text-center">&mdash; Up and Coming Acts &mdash;</h2>
     </header>
     <!--  Products Container  -->

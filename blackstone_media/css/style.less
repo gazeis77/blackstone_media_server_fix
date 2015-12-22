@@ -1,6 +1,36 @@
 @baseColor: #FF4F3B;
+@body-bg: #CC5C49;
+@color: #fff;
+@radius: 5px;
+@nav-pills-active-link-hover-color: #000;
+@nav-pills-active-link-hover-bg: #fff;
 
+
+body {
+  background-color: @body-bg;
+  
+}
 
 header {
-  background-color: @baseColor;
+	background-color: @baseColor;
+    font-size: 32pt;
+    border-radius: @radius;
+    text-shadow: 1px 1px 0px darken(@color, 5%),
+                2px 2px 0px darken(@color, 10%),
+                3px 3px 0px darken(@color, 15%),
+                4px 4px 0px darken(@color, 20%),
+                4px 4px 3px #000;
+
+}
+
+.nav-pills {
+	 > .active > a {
+      &,
+      &:hover,
+      &:focus {
+        color: @nav-pills-active-link-hover-color;
+        background-color: @nav-pills-active-link-hover-bg;
+        text-decoration: none;
+      }
+	} 
 }
