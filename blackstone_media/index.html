@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html ng-app="gemStore">
   <head>
-    <link rel="stylesheet" type="text/css" href="css/bootstrap/css/bootstrap.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap/css/bootstrap.min.css"  media="screen" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap/css/bootstrap-theme.min.css"  media="screen" />
     <link rel="stylesheet/less" type="text/css" href="css/style.less" />
     <link rel="stylesheet" type="text/css" href="css/application.css" />
     <script>
@@ -31,11 +33,24 @@
 
   <body ng-controller="StoreController as store" >
     <!--  Store Header  -->
-<div class="container">
-    <header class="dropshadow">
-      <h1 class="text-center text3d">Hotfire Jamz</h1>
-      <h2 class="text-center">&mdash; Up and Coming Acts &mdash;</h2>
+  <nav>
+      <ul>
+        <li>
+          Home
+        </li>
+         <li>
+          About
+        </li>
+        <li>
+          Theory
+        </li>
+
+      </ul>
+  </nav>
+    <header>
+      <img class="HFJ" src="../blackstone_media/img/hotfire_jamz.png"  />
     </header>
+
     <!--  Products Container  -->
     <div class="list-group">
       <!--  Product Container  -->
@@ -47,7 +62,6 @@
 
         <!-- Product Tabs  -->
         <product-tabs></product-tabs>
-
       </div>
     </div>
 </div>

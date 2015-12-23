@@ -1,10 +1,18 @@
-@baseColor: #FF4F3B;
+@baseColor: #4B4E4F;
 @body-bg: #919799;
 @color: #fff;
 @radius: 5px;
 @nav-pills-active-link-hover-color: #000;
 @nav-pills-active-link-hover-bg: #fff;
+@navColor: #939A9C;
 
+@media (min-width:320px) { }
+@media (min-width:480px) { }
+@media (min-width:768px) { }
+@media (min-width:960px) { }
+@media (min-width:1200px) { }
+
+/* STYLE */
 
 body {
   background-color: @body-bg;
@@ -12,15 +20,9 @@ body {
 }
 
 header {
-	background-color: @baseColor;
-    font-size: 32pt;
-    border-radius: @radius;
-    text-shadow: 1px 1px 0px darken(@color, 5%),
-                2px 2px 0px darken(@color, 10%),
-                3px 3px 0px darken(@color, 15%),
-                4px 4px 0px darken(@color, 20%),
-                4px 4px 3px #000;
+    padding-top: 12px;
 
+    background-color: @baseColor;
 }
 
 
@@ -37,5 +39,65 @@ header {
 }
 
 img {
-  dimension: %60;
+  &:extend(.img-responsive);
+}
+
+#center {
+  display: block;
+}
+
+/* NAV */
+
+.shadow {
+    box-shadow: 0 1px 2px 0 @navColor;
+}
+
+.border(@radius:3px) {
+    border-radius: @radius;
+    border: 1px solid @theme - #050505;
+}
+
+.divider {
+    border-style: solid;
+    border-width: 0 1px 0 1px;
+    border-color: transparent @theme - #111 transparent @theme + #333;
+}
+
+.gradient {
+    background: linear-gradient(top, @theme + #252525 0%, @theme + #171717 50%, @theme - #010101 51%, @theme + #151515 100%);
+}
+.hovereffect {
+    background: linear-gradient(top, @theme - #010101 0%, @theme - #121212 50%, @theme - #222222 51%, @theme - #050505 100%);
+}
+
+
+// Breakpoints
+// ------------------------- Source: http://blog.scur.pl/2012/06/variable-media-queries-less-css/
+@highdensity: ~"only screen and (-webkit-min-device-pixel-ratio: 1.5)",
+              ~"only screen and (min--moz-device-pixel-ratio: 1.5)",
+              ~"only screen and (-o-min-device-pixel-ratio: 3/2)",
+              ~"only screen and (min-device-pixel-ratio: 1.5)";
+@mobile:      ~"only screen and (max-width: 529px)";
+@tablet:      ~"only screen and (min-width: 530px) and (max-width: 949px)";
+@desktop:     ~"only screen and (min-width: 950px) and (max-width: 1128px)";
+@desktop-xl:  ~"only screen and (min-width: 1129px)";
+
+
+
+section, div, span {
+    @media @mobile {
+
+    }
+    @media @tablet {
+
+    }
+    @media @desktop {
+
+    }
+    @media @desktop-xl {
+
+    }
+    @media @desktop, @desktop-xl {
+;
+    }
 }
