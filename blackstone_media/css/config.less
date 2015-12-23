@@ -1,0 +1,35 @@
+@navColor: #939A9C;
+@hoverColor: #000;
+
+/* NAV */
+.shadow {
+    box-shadow: 0 1px 2px 0 @navColor;
+}
+
+.border(@radius:3px) {
+
+
+}
+
+.divider {
+    border-style: solid;
+    border-width: 0 1px 0 1px;
+    border-color: transparent @navColor - #111 transparent @navColor + #333;
+}
+
+.gradient {
+    background: linear-gradient(top, @navColor + #252525 0%, @navColor + #171717 50%, @navColor - #010101 51%, @navColor + #151515 100%);
+}
+.hovereffect {
+    background: linear-gradient(top, @hoverColor - #010101 0%, @hoverColor - #121212 50%, @hoverColor - #222222 51%, @hoverColor - #050505 100%);
+}
+
+.textcolor(@txtcolor) when (lightness(@txtcolor) >= 50%) {
+    color: @txtcolor;
+    text-shadow: 1px 1px 0px #000000;
+}
+
+.textcolor(@txtcolor) when (lightness(@txtcolor) < 50%) {
+    color: @txtcolor;
+    text-shadow: 1px 1px 0px #ffffff;
+}

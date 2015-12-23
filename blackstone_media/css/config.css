@@ -1,0 +1,18 @@
+/* NAV */
+/* NAV */
+.shadow {
+  box-shadow: 0 1px 2px 0 #939a9c;
+}
+.divider {
+  border-style: solid;
+  border-width: 0 1px 0 1px;
+  border-color: transparent #82898b transparent #c6cdcf;
+}
+.gradient {
+  background: linear-gradient(top, #b8bfc1 0%, #aab1b3 50%, #92999b 51%, #a8afb1 100%);
+}
+.hovereffect {
+  background: linear-gradient(top, #000000 0%, #000000 50%, #000000 51%, #000000 100%);
+}
+
+/* This beautiful CSS-File has been crafted with LESS (lesscss.org) and compiled by simpLESS (wearekiss.com/simpless) */

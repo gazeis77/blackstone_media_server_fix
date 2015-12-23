@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html ng-app="gemStore">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,7 +14,7 @@
 <div class="content">
         <nav>
               <ul>
-                  <li><a rel="external" href="#">Home</a></li>
+                  <li><a rel="external" href="../blackstone_media/index.html">Home</a></li>
                   <li><a rel="external" href="../blackstone_media/about.html">About</a></li>
                   <li><a rel="external" href="#">Theories</a></li>
                   <li><a rel="external" href="../blackstone_media/new.html">New</a></li>
@@ -26,28 +25,17 @@
         <img src="../blackstone_media/img/hotfire_jamz.png"  />
     </header>
 
+<div>
+    <h1>So whats this all about?</h1>
+        <p>I love music. Maybe painfully so. I soundtrack everything. There are some strange theories that I plan on exploring here. I don't want to review and berate. I want champion the stuff I love, the things that have fallen between the cracks. I'm in now way an expert. Go get your news from <a href="http://consequenceofsound.net/">Consequence of Sound</a> nobody does it better. For my deep digs and review I find to be honest I trust <a href="http://www.theneedledrop.com/">The Needle Drop</a>.</p>
 
+        <p>My Goal is to be the authority on Hotfire Jamz and Deep Cuts, your filter of sorts. And if I'm lucky maybe make you think about what you&rsquo;re listing to instead of just consuming.</p>
 
-<!--  Products Container  -->
-
-        <div class="list-group">
-
-<!--  Product Container  -->
-
-          <div class="list-group-item" ng-repeat="product in store.products">
-          <h1>New Hotfire Act</h1>
-            <h3>{{product.name}}</h3>
-
-<!-- Image Gallery  -->
-
-            <product-gallery></product-gallery>
-
-<!-- Product Tabs  -->
-
-            <product-tabs></product-tabs>
-          </div>
-        </div>
+    <h1></h1>
 </div>
+
+
+
  <script>
   less = {
     env: "development",
