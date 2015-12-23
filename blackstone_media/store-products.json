@@ -7,8 +7,6 @@
     "color": "#CCC",
     "faces": 14,
     "images": [
-      "../blackstone_media/img/honeyspiders_1.jpeg",
-      "../blackstone_media/img/honeyspiders_2.jpg",
       "../blackstone_media/img/honeyspiders_3.jpg"
     ],
     "reviews": []
@@ -22,9 +20,9 @@
     "color": "#EEE",
     "faces": 12,
     "images": [
-      "../blackstone_media/img/honeyspiders_1.jpeg",
+      "../blackstone_media/img/the_districts.jpg",
       "../blackstone_media/img/honeyspiders_2.jpg",
-      "../blackstone_media/img/honeyspiders_2.jpg"
+      "../blackstone_media/img/honeyspiders_3.jpg"
     ],
     "reviews": []
   },
@@ -37,9 +35,7 @@
     "color": "#000",
     "faces": 6,
     "images": [
-      "../blackstone_media/img/honeyspiders_1.jpeg",
-      "../blackstone_media/img/honeyspiders_2.jpg",
-      "../blackstone_media/img/honeyspiders_2.jpg"
+      "../blackstone_media/img/benjamin_booker.jpg"
     ],
     "reviews": []
   }
